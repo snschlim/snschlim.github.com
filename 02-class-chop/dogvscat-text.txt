@@ -6,7 +6,7 @@
  
  <body>
    <header id="header">
-    <img src="http://i54.tinypic.com/2mi49qo.gif" alt="Cats vs Dogs">
+    <img src="http://i54.tinypic.com/2mi49qo.gif" alt="Cats vs Dogs" />
    </header>
 
    <nav class="main-nav"><ul>
@@ -19,7 +19,7 @@
 
    <section class="dogs">
     <article class="blog-post">
-     <img src="http://i51.tinypic.com/2zz2i5d.jpg" alt="dog" height="300"/>
+     <img src="http://i51.tinypic.com/2zz2i5d.jpg" alt="dog" height="300" />
      <h1>Dogs Have Better Noses</h1>
      <p>
       Dogs can discriminate odors at concentrations nearly 100 million times lower than humans can. The wet nose is essential for determining the direction of the air current containing the smell. Cold receptors in the skin are sensitive to the cooling of the skin by evaporation of the moisture by air currents.
