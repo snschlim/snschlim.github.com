@@ -55,20 +55,33 @@ table {
 
 
 #site-wrapper {
+	position:relative;
+	background-color:#FFFFFF;
 	padding:5px 0 0 0;
 }
 
 	#site-header h1 a {
 		display:block;
-		width:400px;
+		width:100%;
 		height:120px;
-		background:url(images/logo.png) no-repeat top left;	
+		background:url(images/logo.png) no-repeat top left;
+		background-color:#FFFFFF;
+		padding:0 0 0 0;
 		text-indent:-9999px;
 	}
 	
 	#top-nav {
-		float:right;
-		width:50px;
+		position:absolute;
+		top:0;
+		right:0;
+		width:150px;
+		margin:10px 0 0 0;
+	}
+	
+	#top-nav a {
+		color:#774C1B;
+		text-decoration:none;
+		padding:0 8px 0 8px;
 	}
 
 #menu-wrapper {
@@ -81,11 +94,11 @@ table {
 
 	#main-menu a { 
 		float:left;
-		color:FFFFFF;
-		font-size:14px;
-		font-weight:bold;
+		font-size:12px;
+		letter-spacing:0.06em;
 		text-transform:uppercase;
-		margin:6px 20px 0 0;
+		text-decoration:none;
+		margin:4px 20px 0 0;
 	}
 
 	#main-menu li {  
@@ -106,7 +119,8 @@ p {
 	font-family;helvetica;
 	font-size:9px;
 	line-height:1.5em;
-	color:GRAY;
+	color:gray;
+	padding:5px 0 5px 0;
 }
 
 h1 {
@@ -118,9 +132,21 @@ h1 {
 	font-weight:bold;
 }
 
+a {
+	font-family:helvetica;
+	font-size:9px;
+	line-height:1.5em;
+	text-decoration:underline;
+	color:#FFFFFF;
+}
+
+	a:hover {
+		color:#00FF00;
+	}
+
 #page {
 	float:left;
-	width:400px;
+	width:350px;
 	padding:50px 60px 10px 10px;
 }
 
@@ -144,17 +170,20 @@ h1 {
 
 #sidebar {
 	float:left;
+	position:relative;
 	width:400px;
-	padding:82px 0 80px 0;
+	margin:82px 0 80px 0;
 }
 	
 	#sidebar a {
 		font-weight:bold;
+		color:#774C1B;
 	}
 
 	#sidebar img {
 		float:left;
-		padding:10px 0 0 0;
+		width:180px;
+		margin:8px 100px 0 0;
 	}
 
 #footer-wrapper {
@@ -163,13 +192,13 @@ h1 {
 	left:0;
 	right:0;
 	bottom:0;
-	height:100px;
+	height:130px;
 	background-color:#774C1B;
 }
 
 	#footer-contact { 
 		float:left;
-		width:400px;
+		width:350px;
 		color:#DBDCDC;
 		font-size:14px;
 		padding:20px 60px 20px 10px;
@@ -193,9 +222,22 @@ h1 {
 			float:left;
 		}
 		
+		#footer-follow img {
+			width:40px;
+			margin:10px 15px 0 -5px;
+		}
+		
+		#footer-follow h1 {
+			color:#DBDCDC;
+		}
+		
 	#site-footer {
 		margin:0 auto;
 		width:1000px;
 	}
 
-
+.Lobster-normal-400 {
+  font-family: 'Lobster' !important;
+  font-style:  normal;
+  font-weight: 400;
+}
