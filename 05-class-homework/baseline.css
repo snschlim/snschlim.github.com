@@ -73,6 +73,31 @@ table {
 html[xmlns] .clearfix { display: block; }
 * html .clearfix { height: 1%; }
 
+#site-wrapper { width:100%; max-width:960px; }
+#header { width:100%; max-width:257.5px; }
+#section { width:46%; float:left; }
+#footer { display:block; }
+
+img { max-width:100%; }
+
+@media screen and (max-width:1024px) {
+	p { font-size:1em; color:yellow;}
+	#section { float:left; width:100%; }
+	}
+	
+@media screen and (max-width:768px) {
+	p { font-size:0.9em; color:red;}
+	#section { float:none; width:79%; }
+	}
+	
+@media screen and (max-width:320px) {
+    p { font-size:0.8em; color:blue;}
+    #section { float:none; width:33%; }
+    }
+    
+
+	
+
 
 
 body {
