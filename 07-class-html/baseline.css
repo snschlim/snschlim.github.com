@@ -116,6 +116,7 @@ body {
 
 	a {
 		text-decoration: none;
+		text-transform:none;
 		color:black;
 	}
 
@@ -135,6 +136,21 @@ body {
 	#newsletter p {
 		font-size:0.7em;
 	}
+	
+	input {
+		border:1px solid #a5a5a5;
+	}
+	
+	button {
+		height:19px;
+		font-family:'Mate';
+		font-size:0.7em;
+		color:white;
+		text-transform:uppercase;
+		letter-spacing:.1em;
+		background-color:#B49A4C;
+		border:1px solid #fff;
+	}
 
 #main-nav ul li {
 	display:inline-block;
@@ -152,11 +168,19 @@ body {
 	#main-nav ul img {
 		width: 8px;
 		height: 8px;
-		margin: 0 0 2px 0;
+		margin: 2px 0 4px 0;
 	}
 	
 	#main-nav ul li a {
 		letter-spacing:0.1em;
+	}
+
+	#main-nav ul li a:hover {
+		font-family:'Satisfy', cursive;
+		font-size:1.3em;
+		text-transform:lowercase;
+		letter-spacing:.1em;
+		color:#a5a5a5;
 	}
 
 #content-wrapper, #homepage-image img {
