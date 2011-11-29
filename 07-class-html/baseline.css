@@ -225,13 +225,6 @@ body {
 			}
 			
 			
-			
-			
-			
-			
-			
-			
-			
     /* image replacement */
         .graphic, #prevBtn, #nextBtn, #slider1prev, #slider1next{
             margin:0;
@@ -336,3 +329,33 @@ body {
 	ol#controls li a:focus, #prevBtn a:focus, #nextBtn a:focus{outline:none;}
 	
 /* // Easy Slider */
+
+
+
+/* // ABOUT ME PAGE */
+
+#content-wrapper {
+	
+}
+
+
+	
+
+
+
+#content {
+	background:url(images/about_us_pic.jpg) no-repeat 0 0;
+	position:absolute;
+	width:796px; height:434px;
+	}
+	
+#about_us {
+	float:left;
+	width:200px; height:200px;
+	margin: 220px 0 0 580px;
+	}
+	
+h1 {
+	font-weight:bold;
+	margin:0 0 10px 0;
+	}
