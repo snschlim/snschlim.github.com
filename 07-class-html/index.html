@@ -17,11 +17,13 @@
 	<script type="text/javascript" src="js/easySlider1.7.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){	
+		 setTimeout(function() {
 			$("#slider").easySlider({
 				auto: true, 
 				continuous: true
 			});
-		});	
+			},100);
+		});	 
 	</script>
   
   
@@ -55,10 +57,10 @@
 <div id='background'>
 	<div id='header-wrapper'>
 		<header id='site-header'>
-			<h1><a href='#'>Name Here</a></h1>
+			<h1><a href='file:///Users/stephanie/Desktop/web%20design/snschlim.github.com/07-class-html/index.html'>Name Here</a></h1>
 		<nav id='newsletter'>
 			<p>Sign up for our Newsletter!</p>
-			<form name="input" action="html_form_action.asp" method="get">
+			<form name="input_newsletter" action="html_form_action.asp" method="get">
 			 <input type="text" name="user" />
 			 <button type="submit" value="Submit">Submit</button>
 			</form>
@@ -70,13 +72,19 @@
 		<nav id='main-nav'>
 			<img src='images/dotted_line.jpg'/>
 			<ul>
-				<li><a href='/about'>ABOUT</a></li>
+				<li><a href='file:///Users/stephanie/Desktop/web%20design/snschlim.github.com/07-class-html/about.html'>ABOUT</a></li>
 				<img src='images/x_stitch.jpg'/>
-				<li><a href='/work'>WORK</a></li>
+				<li><a href='file:///Users/stephanie/Desktop/web%20design/snschlim.github.com/07-class-html/work.html'>WORK</a>
+					<ul>
+						<li><a href='file:///Users/stephanie/Desktop/web%20design/snschlim.github.com/07-class-html/print.html'>PRINT</a></li>
+						<li><a href='file:///Users/stephanie/Desktop/web%20design/snschlim.github.com/07-class-html/photography.html'>PHOTOGRAPHY</a></li>
+						<li><a href='file:///Users/stephanie/Desktop/web%20design/snschlim.github.com/07-class-html/interactive.html'>INTERACTIVE</a></li>
+					</ul>
+				</li>
 				<img src='images/x_stitch.jpg'/>
 				<li><a href='#'>SHOP</a></li>
 				<img src='images/x_stitch.jpg'/>
-				<li><a href='/custom'>CUSTOM</a></li>
+				<li><a href='file:///Users/stephanie/Desktop/web%20design/snschlim.github.com/07-class-html/custom.html'>CUSTOM</a></li>
 				<img src='images/x_stitch.jpg'/>
 				<li><a href='#'>BLOG</a></li>
 			</ul>
@@ -84,7 +92,6 @@
 		</nav>
 	</div>
 	
-	<div id='content-wrapper'>
 		<div id='content'>
 			<section id='homepage_image'>
 
@@ -98,7 +105,7 @@
 	
 			</section>
 		</div>
-	</div>
+
 	
 		<footer id='site-footer'>
 		<img src='images/arrow_line.jpg'/>
