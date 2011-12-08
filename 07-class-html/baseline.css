@@ -51,7 +51,7 @@ table {
 }
 
 
-/* Center Content */
+/* ////////     CENTER CONTENT    ////////   */
 
 .centered { 
   margin:0 auto;
@@ -59,7 +59,7 @@ table {
 }
 
 
-/* Clearfix */
+/* ////////     CLEARFIX    ////////   */
 .clearfix:after {
 	content: ".";
 	display: block;
@@ -84,6 +84,11 @@ img { max-width:100%; }
 	
 #background {
 	background-color:white;
+}
+
+#main-container {
+	position:relative;
+	min-height:100%;
 }
 
 body {
@@ -208,29 +213,36 @@ h1 {
 	height:434px;
 }
 
+
+
 #content {
 	width:856px;
 	height:434px;
 	margin:15px 0 15px 82px;
-	}
+	padding:0 0 120px 0;
+}
+	
+	
 
 
 #site-footer {
-	position:relative;
+	position:absolute;
+	bottom:0;
+	width:960px; height:100px;
 	background-color:white;
-	height:100px;
+	margin:20px 0 0 0;
 }
 
 	#buttons {
-		width:130px; height:50px;
+		margin:10px 0 0 90px;
+	}
+
+	#buttons ul li {
+		width:35px; height:35px;
 		float:left;
-		margin:10px 0 0 70px;
+		margin:0 5px 0 0;
 	}
 	
-		#buttons a img {
-			width:35px; height:35px;
-			margin:0 5px 0 0;
-		}
 	
 	#copyright {
 		float:left;
@@ -256,7 +268,53 @@ h1 {
 			#envelope {
 				display:block;
 			}
-			
+
+	
+/*  /////////   FOOTER IMG HOVER   /////////  */			
+a.rollover_facebook {
+	display: block;
+	width: 35px;
+	height: 35px;
+	text-decoration: none;
+	background: url("images/facebook_f2.jpg");
+	}
+	
+a.rollover_twitter {
+	display: block;
+	width: 35px;
+	height: 35px;
+	text-decoration: none;
+	background: url("images/twitter_bird_2.jpg");
+	}
+	
+a.rollover_tumblr {
+	display: block;
+	width: 35px;
+	height: 35px;
+	text-decoration: none;
+	background: url("images/tumblr_2.jpg");
+	}
+
+a.rollover_facebook:hover {
+	background-position: -35px 0;
+	}
+	
+a.rollover_twitter:hover {
+	background-position: -35px 0;
+	}
+	
+a.rollover_tumblr:hover {
+	background-position: -35px 0;
+	}
+
+.displace {
+	position: absolute;
+	left: -5000px;
+	}
+/*  /////////   END FOOTER IMG HOVER   /////////  */			
+
+	
+	
 			
     /* image replacement */
         .graphic, #prevBtn, #nextBtn, #slider1prev, #slider1next{
@@ -273,7 +331,7 @@ h1 {
     
     
     
-    /* Easy Slider */
+/* ////////     EASY SLIDER PAGE    ////////   */
     #slider {
     	width:796px;
     	height:434px;
@@ -310,13 +368,13 @@ h1 {
 	#prevBtn {
 		position:absolute;
 		top:390px;
-		left:175px;
+		left:45px;
 		}
 		
 	#nextBtn {
 		position:absolute;
 		top:390px;
-		left:1025px;
+		left:888px;
 		}
 		
 														
@@ -362,45 +420,40 @@ h1 {
 		color:#fff;
 		}
 	ol#controls li a:focus, #prevBtn a:focus, #nextBtn a:focus{outline:none;}
-	
-/* // Easy Slider */
+/* ////////     END EASY SLIDER    ////////   */
 
 
 
-/* // ABOUT ME PAGE */
 
 
-	
-
-
-
+/* ////////     ABOUT ME PAGE    ////////   */
 #about_content {
-/*	background:url(images/about_us_pic.jpg) no-repeat 0 0; */
 	position:relative;
 	width:856px;
 	height:434px;
 	margin:15px 0 15px 82px;
-	}
+	padding:0 0 120px 0;
+}
 	
 #about_us {
 	position:absolute;
 	left:0; top:0;
 	width:200px; height:200px;
 	margin: 220px 0 0 580px;
-	}
+}
 	
 #about_us h1 {
 	font-weight:bold;
 	margin:0 0 10px 0;
-	}
-	
-	
-/* // ABOUT ME PAGE */
+}
+/* ////////     END ABOUT ME PAGE    ////////   */
 
 
 
-/* CUSTOM PAGE */
 
+
+
+/* ////////     CUSTOM PAGE    ////////   */
 #custom_content {
 	width:856px;
 	height:434px;
@@ -445,17 +498,56 @@ label {
 	font-size:0.73em;
 }
 
-	 #custom {
-		height:19px;
-		font-family:'Mate';
-		font-size:0.7em;
-		color:white;
-		text-transform:uppercase;
-		letter-spacing:.1em;
-		background-color:#B49A4C;
-		border:1px solid #fff;
-		margin:5px 0 0 0;
+#custom {
+	height:19px;
+	font-family:'Mate';
+	font-size:0.7em;
+	color:white;
+	text-transform:uppercase;
+	letter-spacing:.1em;
+	background-color:#B49A4C;
+	border:1px solid #fff;
+	margin:5px 0 0 0;
+}
+	
+#custom_content {
+	width:856px;
+	height:434px;
+	margin:15px 0 15px 82px;
+	padding:0 0 120px 0;
+}
+/* ////////     END CUSTOM PAGE    ////////   */
+
+
+
+
+/* ///////		PRINT PAGE		///////// */
+.image1,.image2,.image3,.image4 img {
+	width:70%;
+}
+
+#print_content {
+	width:856px;
+	height:434px;
+	margin:15px 0 15px 82px;
+	padding:0 0 820px 0;
+}
+
+	.description1 {
+		position:absolute;
+		left:0; top:0;
+		width:200px; height:200px;
+		margin: 420px 0 0 700px;
 	}
 
-/* CUSTOM PAGE */
-	
+	.description2 {
+		position:absolute;
+		left:0; top:0;
+		width:200px; height:200px;
+		margin: 750px 0 0 700px;
+	}
+/* ///////		END PRINT PAGE		///////// */
+
+
+
+

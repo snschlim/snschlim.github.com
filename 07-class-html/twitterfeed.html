@@ -26,9 +26,19 @@
   
 </head>
 
-<div id='main-container'>
 
 <body>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -39,8 +49,8 @@
 		<nav id='newsletter'>
 			<p>Sign up for our Newsletter!</p>
 			<form name="input_newsletter" action="html_form_action.asp" method="get">
-			 <input type="text_newsletter" name="user" />
-			 <button type="submit_newsletter" value="Submit">Submit</button>
+			 <input type="text" name="user" />
+			 <button type="submit" value="Submit">Submit</button>
 			</form>
 		</nav>
 		</header>
@@ -70,39 +80,46 @@
 		</nav>
 	</div>
 	
-		<div id='custom_content'>
-			<section id='custom_img'>
-			<img src='images/custom_pic.jpg'/>
-			</section>
-			
-			<section id='custom_text'>
-			<h1>Custom Work</h1>
-			<p>All of our custom designs are made specially for you, printed for you, loved by you (and everyone else)!
-			<br><br>
-If you find yourself in the market for a custom product, we'd be happy to help you bring your ideas to paper. We offer an endless list of customized products such as wedding packages, personal stationery, and various invitations & cards. 
-<br><br>
-We'd love to hear from you! Fill out the contact form below and we'll get back to you ASAP.</p></section>
-		
+		<div id='content'>
+			<section id='homepage_image'>
 
-	<div id='contact_form'>
-		<form id='form' method='post' action='entries.php'>
-		<fieldset>
-			<label for='name'>Name</label>
-			<input id='name_email' type='text_contact' name='form[name]' placeholder='Full Name'>
-			
-			<label for='email'>Email</label>
-			<input id='name_email' type='email' name='form[email]' placeholder='Enter Email'>
+			<div id="slider">
+				
+<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'faves',
+  rpp: 10,
+  interval: 30000,
+  title: 'The best of Twitter according to',
+  subject: 'Top Tweets',
+  width: 250,
+  height: 250,
+  theme: {
+    shell: {
+      background: '#dbdcdc',
+      color: '#4d4d4d'
+    },
+    tweets: {
+      background: '#ffffff',
+      color: '#444444',
+      links: '#3d9e8e'
+    }
+  },
+  features: {
+    scrollbar: true,
+    loop: false,
+    live: true,
+    behavior: 'all'
+  }
+}).render().setUser('toptweets').start();
+</script>
+			</div>
 	
-			<label for='message'>Message</label>
-			<textarea name='form[message]' placeholder='Enter your Message'>
-			</textarea>
-			
-		<button id='custom' type="submit_newsletter" value="Submit">Submit</button>
-		</fieldset>
-		</form>
-	</div>
-	
-	</div>
+			</section>
+		</div>
+
 	
 		<footer id='site-footer'>
 		<img src='images/arrow_line.jpg'/>
@@ -129,5 +146,6 @@ We'd love to hear from you! Fill out the contact form below and we'll get back t
 		</footer>
 </div>
 </body>
-</div>
 </html>
+
+
