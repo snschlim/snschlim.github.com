@@ -91,6 +91,20 @@ img { max-width:100%; }
 	min-height:100%;
 }
 
+#logo h1 a {
+ display:block;  
+ width:360px; 
+ height:360px;  
+ background:url('images/knot&whimsy_logo.png') no-repeat top left; 
+ text-indent:-9999px;
+ }
+
+#logo {
+	position:absolute;
+	width:150px; height:150px;
+	top:40px; left:35px;
+}
+
 body {
 	margin:0 auto;
 	width: 960px;
@@ -127,7 +141,7 @@ h1 {
 	position:absolute;
 	top:0; right:0;
 	width: 220px;
-	margin: 50px 0 0 0;
+	margin: 20px 0 0 0;
 }
 
 	#newsletter p {
@@ -145,9 +159,10 @@ h1 {
 		color:white;
 		text-transform:uppercase;
 		letter-spacing:.1em;
-		background-color:#DBB92A;
+		background-color:#B49A4C;
 		border:1px solid #fff;
 	}
+
 
 
 #main-nav ul li {
@@ -160,7 +175,7 @@ h1 {
 
 	#main-nav ul {
 		text-align:center;
-		margin: 12px 0 5px 0;
+		margin: 12px 0 5px 100px;
 	}
 	
 	#main-nav img {
@@ -198,6 +213,7 @@ h1 {
 		background-color:white;
 		text-align:left;
 		padding:10px 10px 10px 0;
+		margin-left:-15px;
 	}
 
 	#main-nav li ul li {
@@ -269,6 +285,8 @@ h1 {
 				display:block;
 			}
 
+
+				
 	
 /*  /////////   FOOTER IMG HOVER   /////////  */			
 a.rollover_facebook {
@@ -426,9 +444,8 @@ a.rollover_tumblr:hover {
 
 
 
-/* ////////     ABOUT ME PAGE    ////////   */
+/* ////////     ABOUT US PAGE    ////////   */
 #about_content {
-	position:relative;
 	width:856px;
 	height:434px;
 	margin:15px 0 15px 82px;
@@ -439,14 +456,26 @@ a.rollover_tumblr:hover {
 	position:absolute;
 	left:0; top:0;
 	width:200px; height:200px;
-	margin: 220px 0 0 580px;
+	margin: 355px 0 0 660px;
+	font-size:.89em;
+}
+
+#about_us_img {
+	float:left;
+	height:434px;
 }
 	
 #about_us h1 {
 	font-weight:bold;
 	margin:0 0 10px 0;
 }
-/* ////////     END ABOUT ME PAGE    ////////   */
+
+#about_us h4 {
+	margin:10px 0 0 0;
+}
+
+	
+/* ////////     END ABOUT US PAGE    ////////   */
 
 
 
@@ -522,32 +551,88 @@ label {
 
 
 /* ///////		PRINT PAGE		///////// */
+
+#jquery-lightbox {
+	width:856px;
+	height:434px;
+	margin:15px 0 15px 82px;
+}
+
 .image1,.image2,.image3,.image4 img {
 	width:70%;
 }
 
-#print_content {
+#jquery-lightbox {
 	width:856px;
 	height:434px;
-	margin:15px 0 15px 82px;
-	padding:0 0 820px 0;
+	margin:15px 0 15px 0;
+	padding:0 0 0 0;
 }
 
-	.description1 {
-		position:absolute;
-		left:0; top:0;
-		width:200px; height:200px;
-		margin: 420px 0 0 700px;
-	}
+	
+/*  PRINT PG LIGHTBOX */
 
-	.description2 {
-		position:absolute;
-		left:0; top:0;
-		width:200px; height:200px;
-		margin: 750px 0 0 700px;
+	#gallery {
+		background-color:none;
+		padding: 10px;
+		width: 800px;
+		margin:0 0 0 50px;
 	}
+	#gallery ul { list-style: none; }
+	#gallery ul li { display: inline; }
+	#gallery ul img {
+		border: 0px solid #fff;
+		border-width: 5px 5px 5px;
+		margin:15px 0 0 15px;
+	}
+	#gallery ul a:hover img {
+		opacity:.6;
+	}
+	#gallery ul a:hover { color: #fff; }
+	
+	
+	#section1 {
+		width:800px;
+		height:165px;
+		margin:0 0 0 15px;
+	}
+	
+	#section2 {
+		width:800px;
+		height:165px;
+		margin:0 0 0 15px;
+	}
+	
+	
+	
+
+
+/* END PRINT PG LIGHTBOX */
+	
+
 /* ///////		END PRINT PAGE		///////// */
 
 
 
 
+
+/*    CONTACT PAGE   */
+
+#contact_text {
+	text-align:center;
+	margin:30px 0 0 0;
+}
+
+h1.contact {
+	color:#B49A4C;
+	margin:0 0 10px 0;
+	font-size:1em;
+	letter-spacing:.1em;
+}
+
+
+#contact_content {
+	width:856px;
+	height:470px;
+	margin:15px 0 15px 82px;
+}

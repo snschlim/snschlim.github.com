@@ -12,23 +12,10 @@
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
-  
-  	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/easySlider1.7.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function(){	
-		 setTimeout(function() {
-			$("#slider").easySlider({
-				auto: true, 
-				continuous: true
-			});
-			},100);
-		});	 
-	</script>
+
   
   
   <link rel="stylesheet" href="baseline.css" type="text/css" media="screen" />
-  
   
 
   
@@ -38,31 +25,23 @@
   
 </head>
 
+<div id='main-container'>
 
 <body>
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 <div id='background'>
 	<div id='header-wrapper'>
 		<header id='site-header'>
-			<h1><a href='file:///Users/stephanie/Desktop/web%20design/snschlim.github.com/07-class-html/index.html'>Name Here</a></h1>
-		<nav id='newsletter'>
+			<div id='logo'>
+				<h1><a href='file:///Users/stephanie/Desktop/web%20design/snschlim.github.com/07-class-html/index.html'>Knot & Whimsy</a></h1>
+			</div>
+			<nav id='newsletter'>
 			<p>Sign up for our Newsletter!</p>
 			<form name="input_newsletter" action="html_form_action.asp" method="get">
-			 <input type="text" name="user" />
-			 <button type="submit" value="Submit">Submit</button>
+			 <input type="text_newsletter" name="user" />
+			 <button type="submit_newsletter" value="Submit">Submit</button>
 			</form>
 		</nav>
 		</header>
@@ -87,32 +66,49 @@
 				<li><a href='file:///Users/stephanie/Desktop/web%20design/snschlim.github.com/07-class-html/custom.html'>CUSTOM</a></li>
 				<img src='images/x_stitch.jpg'/>
 				<li><a href='http://knotandwhimsy.tumblr.com'>BLOG</a></li>
+								<img src='images/x_stitch.jpg'/>
+				<li><a href='file:///Users/stephanie/Desktop/web%20design/snschlim.github.com/07-class-html/contact.html'>CONTACT</a></li>
+
 			</ul>
 			<img src='images/dotted_line.jpg'/>
 		</nav>
 	</div>
 	
-		<div id='content'>
-			<section id='homepage_image'>
-
-			<div id="slider">
-				<ul>				
-					<li><img src="images/amsterdam_orange.png" alt="image1" /></li>
-					<li><img src="images/amsterdam_pink.png" alt="image2" /></li>
-					<li><img src="images/amsterdam_tan.png" alt="image3" /></li>
-				</ul>
-			</div>
-	
+		<div id='contact_content'>
+			
+			<section id='contact_text'>
+			<p>
+			<h1 class='contact'>PLEASE DO!</h1>
+			To place orders, discuss a potential project, or for general <br>inquiries please contact us at the studio.
+			<br>
+			Monday - Friday 8-6
+			<br><Br>
+			<h1 class='contact'>TELEPHONE:</h1>
+			123.456.7890
+			<br><br>
+			<h1 class='contact'>EMAIL:</h1>
+		    knotandwhimsy@gmail.com
+			<br><Br>
+			<h1 class='contact'>POST:</h1>
+			110 Longwood Ave, Unit 1<br>
+			Brookline, MA 02446
+			<br><br>
+			We'd love to hear from you!
+			</p>
+			
 			</section>
-		</div>
-
+		
+	
+	</div>
 	
 		<footer id='site-footer'>
 		<img src='images/arrow_line.jpg'/>
 			<section id='buttons'>
-				<a href='http://facebook.com/knotandwhimsy'><img src='images/facebook_f.jpg' alt='facebook'/></a>
-				<a href='http://twitter.com/knotandwhimsy'><img src='images/twitter_bird.jpg' alt='twitter' /></a>
-				<a href='http://knotandwhimsy.tumblr.com'><img src='images/tumblr_t.jpg' alt='tumblr' /></a>
+				<ul>
+					<li><a href="http://facebook.com/knotandwhimsy" class="rollover_facebook" title="facebook"><span class="displace">Facebook</span></a></li>
+					<li><a href="http://twitter.com/knotandwhimsy" class="rollover_twitter" title="twitter"><span class="displace">Twitter</span></a></li>
+					<li><a href="http://knotandwhimsy.tumblr.com" class="rollover_tumblr" title="tumblr"><span class="displace">Tumblr</span></a></li>
+				</ul>
 			</section>
 			
 			<section id='contact'>
@@ -120,7 +116,7 @@
 					<img src='images/telephone.jpg' alt='contact' />123-456-7890
 				</div>
 				<div id='envelope'>
-					<img src='images/envelope.jpg' alt='contact' />ourcompany@gmail.com
+					<img src='images/envelope.jpg' alt='contact' />knotandwhimsy@gmail.com
 				</div>
 			</section>
 			
@@ -130,4 +126,5 @@
 		</footer>
 </div>
 </body>
+</div>
 </html>

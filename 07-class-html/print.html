@@ -1,58 +1,49 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-
-
-
-
 <head>
 	<meta charset="UTF-8">
 	<title></title>
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-
-
-
-  
   
   <link rel="stylesheet" href="baseline.css" type="text/css" media="screen" />
   
-  
-
-  
-  <link href='http://fonts.googleapis.com/css?family=Mate' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Mate' rel='stylesheet' type='text/css'>
   
   <link href='http://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+  
+  
+    <script type="text/javascript" src="lightbox/js/jquery.js"></script>
+    <script type="text/javascript" src="lightbox/js/jquery.lightbox-0.5.js"></script>
+    <link rel="stylesheet" type="text/css" href="lightbox/css/jquery.lightbox-0.5.css" media="screen" />
+
+
+    <script type="text/javascript">
+    $(function() {
+        $('#gallery a').lightBox();
+    });
+    </script>
+    
+
+  
   
 </head>
 
 <div id='main-container'>
 
 <body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div id='background'>
 	<div id='header-wrapper'>
 		<header id='site-header'>
-			<h1><a href='file:///Users/stephanie/Desktop/web%20design/snschlim.github.com/07-class-html/index.html'>Name Here</a></h1>
-		<nav id='newsletter'>
+			<div id='logo'>
+				<h1><a href='file:///Users/stephanie/Desktop/web%20design/snschlim.github.com/07-class-html/index.html'>Knot & Whimsy</a></h1>
+			</div>		<nav id='newsletter'>
 			<p>Sign up for our Newsletter!</p>
 			<form name="input_newsletter" action="html_form_action.asp" method="get">
 			 <input type="text" name="user" />
-			 <button type="submit" value="Submit">Submit</button>
+			 <button type="submit_newsletter" value="Submit">Submit</button>
 			</form>
 		</nav>
 		</header>
@@ -66,36 +57,81 @@
 				<img src='images/x_stitch.jpg'/>
 				<li><a href='file:///Users/stephanie/Desktop/web%20design/snschlim.github.com/07-class-html/work.html'>WORK</a>
 					<ul>
-						<li><a href='file:///Users/stephanie/Desktop/web%20design/snschlim.github.com/07-class-html/print.html'>PRINT</a></li>
-						<li><a href='file:///Users/stephanie/Desktop/web%20design/snschlim.github.com/07-class-html/photography.html'>PHOTOGRAPHY</a></li>
-						<li><a href='file:///Users/stephanie/Desktop/web%20design/snschlim.github.com/07-class-html/interactive.html'>INTERACTIVE</a></li>
+						<li><a href='http://snschlim.github.com/07-class-html/print.html'>PRINT</a></li>
+						<li><a href='http://snschlim.github.com/07-class-html/photography.html'>PHOTOGRAPHY</a></li>
+						<li><a href='http://snschlim.github.com/07-class-html/interactive.html'>INTERACTIVE</a></li>
 					</ul>
 				</li>
 				<img src='images/x_stitch.jpg'/>
 				<li><a href='http://www.etsy.com/people/knotandwhimsy'>SHOP</a></li>
 				<img src='images/x_stitch.jpg'/>
-				<li><a href='file:///Users/stephanie/Desktop/web%20design/snschlim.github.com/07-class-html/custom.html'>CUSTOM</a></li>
+				<li><a href='http://snschlim.github.com/07-class-html/custom.html'>CUSTOM</a></li>
 				<img src='images/x_stitch.jpg'/>
 				<li><a href='http://knotandwhimsy.tumblr.com'>BLOG</a></li>
+								<img src='images/x_stitch.jpg'/>
+				<li><a href='file:///Users/stephanie/Desktop/web%20design/snschlim.github.com/07-class-html/contact.html'>CONTACT</a></li>
+
 			</ul>
 			<img src='images/dotted_line.jpg'/>
+
 		</nav>
 	</div>
 	
-		<div id='print_content'>
-			<section id='print_image'>
-
-			<ul>
-				<li class='image1'><img src='images/amsterdam_tan.png' alt='image1' /></li>
-				<li class='description1'>bwah bwah bwah bwah bwah bwah bwah bwah bwah bwah bwah bwah </li>
-				
-				<li class='image2'><img src='images/calendar_index.jpg' alt='image2' /></li>
-				<li class='description2'>bwah bwah bwah bwah bwah bwah bwah bwah bwah bwah bwah bwah </li>
-			</ul>
-			</section>
+	<div id="about_content">
+			<div id="gallery">
+ 			<div id="section1">  
+ 					<ul>
+ 				       <li>
+ 				           <a href="images/print_1.jpg">
+ 				           <img src="images/print_1_sm.jpg" width="150" height="150" alt="" />
+				            </a>
+						</li>
+				        <li>
+				            <a href="images/print_2.jpg">
+                			<img src="images/print_2_sm.jpg" width="150" height="150" alt="" />
+            				</a>
+        				</li>
+        				<li>
+            				<a href="images/print_3.jpg">
+       				         <img src="images/print_3_sm.jpg" width="150" height="150" alt="" />
+    				        </a>
+ 				       </li>
+				        <li>
+				            <a href="images/print_4.jpg">
+			                <img src="images/print_4_sm.jpg" width="150" height="150" alt="" />
+				            </a>
+				        </li></ul>
+				        </div>
+				    <div id="section2">
+				    	<ul>
+				        <li>
+				            <a href="images/print_5.jpg">
+			                <img src="images/print_5_sm.jpg" width="150" height="150" alt="" />
+				            </a>
+				        </li>
+						<li>
+				            <a href="images/print_6.jpg">
+			                <img src="images/print_6_sm.jpg" width="150" height="150" alt="" />
+				            </a>
+				        </li>
+				        <li>
+				            <a href="images/print_7.jpg">
+			                <img src="images/print_7_sm.jpg" width="150" height="150" alt="" />
+				            </a>
+				        </li>
+				        <li>
+				            <a href="images/print_8.jpg">
+			                <img src="images/print_8_sm.jpg" width="150" height="150" alt="" />
+				            </a>
+				        </li></ul>
+				    </div>
+			    </ul>
 		</div>
+	</div>
+
 
 	
+	<div id='footer-wrapper'>
 		<footer id='site-footer'>
 		<img src='images/arrow_line.jpg'/>
 			<section id='buttons'>
@@ -111,7 +147,7 @@
 					<img src='images/telephone.jpg' alt='contact' />123-456-7890
 				</div>
 				<div id='envelope'>
-					<img src='images/envelope.jpg' alt='contact' />ourcompany@gmail.com
+					<img src='images/envelope.jpg' alt='contact' />knotandwhimsy@gmail.com
 				</div>
 			</section>
 			
@@ -119,7 +155,9 @@
 				copyright © 2011. all rights reserved.
 			</section>
 		</footer>
+	</div>
 </div>
+
 </body>
 </div>
 </html>
